@@ -10,7 +10,8 @@ def main():
 
     # 2. Select a model that supports caching
     # Using Claude 3.5 Haiku
-    model_id = "global.anthropic.claude-haiku-4-5-20251001-v1:0"
+    # model_id = "global.anthropic.claude-haiku-4-5-20251001-v1:0"
+    model_id = 'us.anthropic.claude-3-5-haiku-20241022-v1:0'
 
     # 3. Create a large context to cache
     # Claude 3.5 Sonnet requires a minimum of 1024 tokens to cache
@@ -64,8 +65,6 @@ def main():
         {
             "role": "user",
             "content": [
-                {"text": "Summarize the reference text briefly."},
-                {"cachePoint": {"type": "default"}},
                 {
                     "text": "What is the first sentence of the reference text and what did i already ask you?"
                 },

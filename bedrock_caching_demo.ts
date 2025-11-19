@@ -66,8 +66,6 @@ async function main() {
   const message2: Message = {
     role: "user",
     content: [
-    //   { text: "Summarize the reference text briefly." },
-    //   { cachePoint: { type: "default" } },
       { text: "What is the first sentence of the reference text?" },
     ],
   };
